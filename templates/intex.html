@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinkenk.shop - Бюст Brawl Stars</title>
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Иконки сайта -->
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+<body>
+
+<header>
+    <h1>Sinkenk.shop - Быстрый и Надёжный Буст</h1>
+    <nav>
+        <ul>
+            <li><a href="#rank-boost">Буст рангов</a></li>
+            <li><a href="#league-boost">Буст лиги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="rank-boost">
+    <h2>Буст рангов | Повышение ранга 📱</h2>
+    <p>⚡️⚡️ Следуйте указанному бусту и заказывайте прямо сейчас!</p>
+    <div class="boost-list">
+        <div class="boost-item">
+            <h3>🛡️ 0-750</h3>
+            <p>Цена: 5$</p>
+            <button onclick="orderBoost('0-750')">Заказать</button>
+        </div>
+        <div class="boost-item">
+            <h3>🛡️ 500-750</h3>
+            <p>Цена: 1.50$</p>
+            <button onclick="orderBoost('500-750')">Заказать</button>
+        </div>
+        <div class="boost-item">
+            <h3>🛡️ 600-750</h3>
+            <p>Цена: 1$</p>
+            <button onclick="orderBoost('600-750')">Заказать</button>
+        </div>
+        <div class="boost-item">
+            <h3>🛡️ 700-750</h3>
+            <p>Цена: 0.50$</p>
+            <button onclick="orderBoost('700-750')">Заказать</button>
+        </div>
+    </div>
+    <h3>Буст рангов в пати ❤️</h3>
+    <p>Не хотите передать аккаунт? Мы можем помочь Вам в команде! <br> Буст в округе та же цена, только с наценкой 10%, так как уйдёт в разы больше времени.</p>
+</section>
+
+<!-- 🔹 БУСТ ЛИГИ -->
+<section id="league-boost">
+    <h2>Буст лиги | Boost League</h2>
+    <p>Цены указаны с бронзами до ранга!</p>
+    <div class="boost-list">
+        <div class="boost-item">
+            <h3>Серебро</h3>
+            <p>Цена: 0.50$</p>
+            <button onclick="orderBoost('Silver')">Заказать</button>
+        </div>
+        <div class="boost-item">
+            <h3>Золото</h3>
+            <p>Цена: 1,20$</p>
+            <button onclick="orderBoost('Gold')">Заказать</button>
+        </div>
+        <div class="boost-item">
+            <h3>Бриллиант</h3>
+            <p>Цена: 2,50$</p>
+            <button onclick="orderBoost('Diamond')">Заказать</button>
+        </div>
+        <div class="boost-item">
+            <h3>Мифический</h3>
+            <p>Цена: 5.50$</p>
+            <button onclick="orderBoost('Mythical')">Заказать</button>
+        </div>
+        <div class="boost-item">
+            <h3>Легенда</h3>
+            <p>Цена: 10$</p>
+            <button onclick="orderBoost('Legend')">Заказать</button>
+        </div>
+        <div class="boost-item">
+            <h3>Мастер</h3>
+            <p>Цена: 40$</p>
+            <button onclick="orderBoost('Master')">Заказать</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Свяжитесь с нами</h2>
+    <p>Оставьте заявку, и мы ответим в Telegram!</p>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Ваше имя" required>
+        <input type="text" id="telegram" placeholder="Ваш Telegram" required>
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Магазин Синкенк. Все права защищены.</p>
+</footer>
+
+<!-- Подключение скриптов -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
