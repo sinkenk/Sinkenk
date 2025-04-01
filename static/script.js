@@ -1,6 +1,6 @@
 const BOT_TOKEN = "8173463129:AAF_F5qLGF4uITlDFq-4DLDM0jm8P8n-0xA";
 const CHAT_ID = "5090375112";
-const TELEGRAM_LINK = "https://t.me/denlykis";
+const TELEGRAM_LINK = "https://t.me/sinkek1";
 
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -32,6 +32,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 });
 
 function orderBoost(boostType) {
-    let telegramLink = "https://t.me/denlykis";
+    let telegramLink = "https://t.me/sinkek1";
     window.open(telegramLink, "_blank");
 }
