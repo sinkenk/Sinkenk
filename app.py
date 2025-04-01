@@ -15,7 +15,7 @@ def sitemap():
 # Обработка favicon.ico
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory('static', 'favicon.png', mimetype='image/png')
+    return send_from_directory('static', 'favicon.ico', mimetype='image/ico')
 
 if __name__ == '__main__':
     app.run(debug=True)
